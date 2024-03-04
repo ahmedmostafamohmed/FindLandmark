@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- -------------------- Logo or icon Website ------------------------- -->
+    <link rel="shortcut icon" href="images/location-icon.png" type="image/x-icon">
+
+    <!-- ---------------------------- Font  --------------------------------- -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Signika+Negative:wght@500&display=swap" rel="stylesheet">
+
+    <!-- ---------------- animation style by WOW library ------------------- -->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!-- ----------------------- bootstrap style --------------------------- -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!-- ---------------------- font awesome style ------------------------- -->
+    <link rel="stylesheet" href="css/all.css">
+
+    <!-- ----------------------------- Main style -------------------------- -->
+    <link rel="stylesheet" href="css/main.css">
+
+    <!-- ----------------------------- Title Website -------------------------- -->
+    <title>Find Poi2</title>
+</head>
+
+
+
+
+<body class="bg-light">
+    
+    <!-- ----------------------------- Loading -------------------------- -->
+    <div id="loadingX" class="loading">
+        <img src="images/sunny-light.svg" alt="" srcset="">
+        <div class="text-loading fw-bold">L<span class="loader"></span>ading...</div>
+    </div>
+
+
+    
+    <!-- ------------------------- Header Section -----------------------  -->
+    <header id="to-top">
+        <div class="head pb-5 pt-4">
+            <div class="row pt-0 pb-5 g-3 container-fluid">
+                <div class="col-md-3 col-sm-12">
+                    <a href="#to-top " class="link-light text-decoration-none">
+                        <!-- <img src="images/digital-egypt-logo.png" class="w-100 wow animate__swing "
+                            data-wow-duration="2s" data-wow-delay="2s" alt=""> -->
+                            <h1 class="titleTxt fs-1 fw-bold text-center link-light text-decoration-none w-100 wow animate__swing" 
+                            data-wow-duration="2s" data-wow-delay="2s">Find Landmark</h1>
+                        </a>
+                </div>
+                <!-- ---------- Search By Name ------------  -->
+                <div class="col-md-6 col-sm-12 text-center">
+                    <input type="search" id="FindPoiByName"
+                        class="shadow form-control p-2 px-3 pl-10 w-full rounded-pill dark:placeholder-gray-400 wow animate__backInLeft "
+                        data-wow-duration="2s" placeholder="Search By Name..." required="">
+                </div>
+                <!-- --------- Search By Category ---------  -->
+                <div class="col-md-3 col-sm-12 text-center">
+                    <input type="search" id="FindCategory"
+                        class="shadow form-control p-2 px-3 pl-10 w-full rounded-pill dark:placeholder-gray-400 wow animate__backInRight "
+                        data-wow-duration="2s" placeholder="Search By Category..." required="">
+                </div>
+            </div>
+        </div>
+    </header>
+
+
+
+    
+    <!-- ---------------------- Body Section ---------------------- -->
+    <div id="particles-js" class="position-relative start-0 end-0 top-0 bottom-0">
+        <div class="position-absolute start-0 end-0">
+            <section id="Search1">
+                <div class="banner">
+                    <div class="container-body">
+                        <div class="row g-3">
+                            <div id="demo">
+
+                                
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+
+            <!-- ---------------------- footer Section ---------------------- -->
+            <footer id="footer" class="fixed-bottom">
+                <div class="footer py-3">
+                    <div class="container">
+                        <div class="row text-center">
+                            <div class="col-lg-3 col-md-6 col-sm-6 m-auto mb-1">
+
+                                <a href="https://www.facebook.com/digitalegypt" target="_blank">
+                                    <i class="fa-brands fa-facebook icon-social rounded-circle"></i>
+                                </a>
+                                <a href="#" title="01155023528">
+                                    <i class="fa-brands fa-whatsapp icon-social rounded-circle"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/ahmed-mostafa-7469b41b7/" target="_blank">
+                                    <i class="fa-brands fa-linkedin icon-social rounded-circle"></i>
+                                </a>
+                                <a href="https://github.com/ahmedmostafamohmed" target="_blank">
+                                    <i class="fa-brands fa-github icon-social rounded-circle"></i>
+                                </a>
+
+                            </div>
+                            <div class="copyright text-center">
+                                Copyright © 2022, Designed by Ah-med Mostafa. All rights reserved
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </div>
+            <div class="backToTop"><a href="#to-top"><i class="fa-solid fa-arrow-up backToTopIcon p-2"></i></a></div>
+
+
+    <script src="js/jquery-3.6.1.min.js"></script>
+    <script src="js/particles.js"></script>
+    <script src="js/wow.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script> new WOW().init(); </script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,254 @@
+:root {
+    --mainColor: #0581b3;
+}
+
+body {
+    overflow: hidden;
+    background: rgb(251, 253, 254);
+    background: linear-gradient(180deg, rgba(251, 253, 254, 1) 0%, rgba(238, 248, 249, 1) 25%, rgba(255, 255, 255, 1) 59%, rgba(255, 255, 255, 1) 100%);
+    font-family: 'Signika Negative', sans-serif;
+}
+
+.head {
+    background-image: url(../images/wave-lg.svg);
+    width: 100%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top center;
+}
+
+/* ----------------------------- body Section --------------------------------- */
+/* Search form-control */
+.titleTxt
+{
+    /* font-size: 100px; */
+    background: -webkit-linear-gradient(rgb(255, 255, 255), #bbe9fb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.titleTxt:hover
+{
+    /* font-size: 100px; */
+    background: -webkit-linear-gradient( #bbe9fb, rgb(255, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.form-control {
+    color: var(--mainColor);
+    border-color: var(--mainColor);
+}
+
+.form-control:focus {
+    background-color: #ffffff;
+    border-color: #0b0b1b;
+    color: var(--mainColor);
+    box-shadow: none;
+    z-index: 0;
+}
+
+/*  --------------------- Card-Body  -------------------------- */
+.container-body {
+    width: 95%;
+    margin: auto;
+}
+.card:hover {
+    transform: scale(1.02);
+    transition: all 0.2s;
+}
+
+.card-header {
+    background-color: white;
+}
+
+.name:hover {
+    color: var(--mainColor);
+    cursor: pointer;
+
+}
+
+.faceB {
+    color: #1876f2;
+}
+
+.twit {
+    color: #1DA1F2;
+}
+
+.mail {
+    background: linear-gradient(356deg, rgb(252, 215, 2) 4%, rgba(255,1,1,1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.insta {
+    background: linear-gradient(231deg, rgba(131, 58, 180, 1) 0%, rgba(253, 29, 29, 1) 50%, rgba(252, 176, 69, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.webS {
+    background: linear-gradient(90deg, rgba(2, 0, 36, 1) 0%, rgba(9, 9, 121, 1) 35%, rgba(0, 212, 255, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.imgPath {
+    background: linear-gradient(184deg, rgba(8, 150, 5, 1) 0%, rgba(1, 152, 255, 1) 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.td-Social {
+    color: #000000;
+    text-decoration: none;
+}
+
+.td-Social:hover {
+    color: var(--mainColor);
+}
+
+.card-footer {
+    background-color: rgb(245, 249, 251);
+}
+
+.phone {
+    color: #000000;
+    cursor: pointer;
+}
+
+.phone:hover , .fa-location-dot:hover {
+    color: #ff0000;
+}
+.fa-location-dot , .fa-copy{
+    cursor: pointer;
+    color: var(--mainColor);
+}
+
+/* ---------------------- footer Section ---------------------- */
+.footer {
+    background: rgb(130, 215, 250);
+    background: linear-gradient(315deg, rgba(130, 215, 250, 1) 0%, rgba(5, 129, 179, 1) 35%, rgba(5, 129, 179, 1) 59%, rgba(135, 216, 249, 1) 100%);
+}
+
+/*  ------ icon-social --------*/
+.icon-social {
+    color: white;
+    font-size: 25px;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.icon-social:hover {
+    color: #070711;
+    background-color: var(--mainColor);
+    border-color: var(--mainColor);
+}
+
+.copyright {
+    color: #ffffff;
+}
+
+/* ---------------------- Scrollbar Style ---------------------- */
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #888;  
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #080821;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: var(--mainColor);
+  }
+
+
+
+/* ---------------------- Loading Style ---------------------- */
+.loading {
+    position: fixed;
+    top: 0px;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+    background-color: #070711;
+    z-index: 9999;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.text-loading {
+    color: var(--mainColor);
+    font-size: x-large;
+}
+
+.loader {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: inline-block;
+    border-top: 4px solid #FFF;
+    border-right: 4px solid transparent;
+    box-sizing: border-box;
+    animation: rotation 1s linear infinite;
+}
+
+.loader::after {
+    content: '';
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border-bottom: 4px solid var(--mainColor);
+    border-left: 4px solid transparent;
+}
+
+@keyframes rotation {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+/* ---------------------- back To Top Style ---------------------- */
+.backToTop {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    z-index: 5555;
+}
+
+.backToTopIcon {
+    color: var(--mainColor);
+    background-color: #fff;
+    border-radius: 50%;
+    border: 2px solid #007aff;
+}
+
+.backToTopIcon:hover {
+    color: #fff;
+    background-color: #007aff;
+}
